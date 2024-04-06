@@ -46,10 +46,11 @@
     }
   </style>
 </head>
+  <h1>Presale Coin</h1>
+  <hr>
 <body>
 <div>
-  <h1>Presale Coin</h1>
-  <strong>Active  <img src="https://i.postimg.cc/Nf7sPYx2/png-transparent-circle-green-circle-color-grass-sphere-thumbnail.png" width="12" height="12"></strong><br>
+<strong>Active  <img src="https://i.postimg.cc/Nf7sPYx2/png-transparent-circle-green-circle-color-grass-sphere-thumbnail.png" width="12" height="12"></strong><br>
   <center><img src="https://i.postimg.cc/QCZbCcwt/photo-2024-02-24-19-29-37.png" width="75" height="75" alt="Logo"></center>
   <strong><p>MATVEY JETTON</p></strong>
   <strong><p>1 MATVEY = 0.003 TON</p></strong>
