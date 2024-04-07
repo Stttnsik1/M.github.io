@@ -61,7 +61,7 @@
   </div>
   <strong><p>Progress (50%) 50/100 TON</p></strong>
   <center><progress max="100" value="50">Загружено на <span id="value">50%</span></progress></center>
-  <form action="https://ton.app/pay/transfer/matveymatvey.ton?amount=1000000000&text=MATVEY%20JETTON%20" target="_blank">
+  <form action="https://ton.app/pay/transfer/matveymatvey.ton?amount=5000000000&text=MATVEY%20JETTON%20" target="_blank">
     <button type="submit" class="floating-button"><strong>Buy Token</strong></button>
   </form>
 </div>
