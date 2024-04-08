@@ -61,8 +61,7 @@
   </div>
   <strong><p>Progress (50%) 50/100 TON</p></strong>
   <center><progress max="100" value="50">Загружено на <span id="value">50%</span></progress></center>
-    <button><strong>Buy Token</strong></button>
-  </form>
+    <center><button type="submit" class="floating-button"><strong>Buy Token</strong></button></center>
 </div>
 </body>
 </html>
