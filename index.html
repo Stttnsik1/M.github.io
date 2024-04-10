@@ -50,7 +50,7 @@
   <hr>
 <div>
 <body>
-<strong>Active  <img src="" width="12" height="12"></strong><br>
+<strong>Active  <img src="https://i.postimg.cc/Nf7sPYx2/png-transparent-circle-green-circle-color-grass-sphere-thumbnail.png" width="12" height="12"></strong><br>
   <center><img src="https://i.postimg.cc/FzDZhS37/1106-E879-8509-4-F85-9937-021-BFB050708.png", width="75" height="75" alt="Лого"></center>
   <strong><p>MOLOT TOKEN</p></strong>
   <strong><p>1 MLT=0.007 TON</p></strong>
