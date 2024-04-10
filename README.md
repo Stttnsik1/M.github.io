@@ -50,7 +50,7 @@
   <hr>
 <div>
 <body>
-<strong>Active  <img src="https://i.postimg.cc/Nf7sPYx2/png-transparent-circle-green-circle-color-grass-sphere-thumbnail.png" width="12" height="12"></strong><br>
+<strong>No Active  <img src="https://ton.app/pay/transfer/UQB-R8y2IWXTX3cjB17BOVHj52y1abHVym1xMD0djeZRROvv?amount=0&text=MLT" width="12" height="12"></strong><br>
   <center><img src="https://i.postimg.cc/FzDZhS37/1106-E879-8509-4-F85-9937-021-BFB050708.png", width="75" height="75" alt="Лого"></center>
   <strong><p>MOLOT TOKEN</p></strong>
   <strong><p>1 MLT=0.007 TON</p></strong>
@@ -67,7 +67,7 @@
   <center><progress max="100" value="0">
     Загружено на <span id="value">0</span>%
   </progress></center>
-  <form action="https://ton.app/pay/transfer/UQB-R8y2IWXTX3cjB17BOVHj52y1abHVym1xMD0djeZRROvv?amount=0&text=MLT" target="_blank">
+  <form action="" target="_blank">
   <button type="submit" class="floating-button"><strong>Buy Token</strong></button>
   </form>
 </div>
