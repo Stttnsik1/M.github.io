@@ -50,7 +50,7 @@
   <hr>
 <div>
 <body>
-<strong>No Active  <img src="https://i.postimg.cc/Xvv74fzh/pngtree-circle-clipart-gray-circle-png-image-2381994.jpg" width="12" height="12"></strong><br>
+<strong>No Active  <img src="https://i.postimg.cc/657qFJPZ/pngtree-circle-clipart-gray-circle-png-image-2381994.png" width="12" height="12"></strong><br>
   <center><img src="https://i.postimg.cc/FzDZhS37/1106-E879-8509-4-F85-9937-021-BFB050708.png", width="75" height="75" alt="Лого"></center>
   <strong><p>MOLOT TOKEN</p></strong>
   <strong><p>1 MLT=0.007 TON</p></strong>
@@ -73,7 +73,7 @@
   
 <body>
 <div>
-<strong>No Active  <img src="https://i.postimg.cc/Xvv74fzh/pngtree-circle-clipart-gray-circle-png-image-2381994.jpg" width="12" height="12"></strong><br>
+<strong>No Active  <img src="https://i.postimg.cc/657qFJPZ/pngtree-circle-clipart-gray-circle-png-image-2381994.png" width="12" height="12"></strong><br>
   <center><img src="https://i.postimg.cc/QCZbCcwt/photo-2024-02-24-19-29-37.png" width="75" height="75" alt="Logo"></center>
   <strong><p>MATVEY JETTON</p></strong>
   <strong><p>1 MATVEY = 0.003 TON</p></strong>
