@@ -68,7 +68,7 @@
     Загружено на <span id="value">0</span>%
   </progress></center>
   <form action="" target="_blank">
-  <button type="submit" class="floating-button"><strong>Buy Token</strong></button>
+  <button><strong>Buy Token</strong></button>
   </form>
 </div>
   
