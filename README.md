@@ -48,28 +48,7 @@
 </head>
   <h1>Presale Coin</h1>
   <hr>
-<div>
-<body>
-<strong>No Active  <img src="https://i.postimg.cc/657qFJPZ/pngtree-circle-clipart-gray-circle-png-image-2381994.png" width="12" height="12"></strong><br>
-  <center><img src="https://i.postimg.cc/FzDZhS37/1106-E879-8509-4-F85-9937-021-BFB050708.png", width="75" height="75" alt="Лого"></center>
-  <strong><p>MOLOT TOKEN</p></strong>
-  <strong><p>1 MLT=0.007 TON</p></strong>
-  <strong><p>Soft cap 1400 TON</p></strong>
-  
-  <body>
-  <div>
-  <strong><p>Liquidity Pool: 100%</p></strong>
-  <strong><p>Offered: 200 000 MLT</p></strong>
-  </body>
-  </div>
 
-  <strong><p>Progress(0%)  0/1400 TON</p></strong>
-  <center><progress max="100" value="0">
-    Загружено на <span id="value">0</span>%
-  </progress></center>
-  <center><button type="submit" class="floating-button"><strong>Buy Token</strong></button></center>
-  </form>
-</div>
   
 <body>
 <div>
