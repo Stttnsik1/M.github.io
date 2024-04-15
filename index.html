@@ -49,6 +49,32 @@
   <h1>Presale Coin</h1>
   <hr>
 
+  <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+<div id="ton-connect" style="position: absolute; top: 2%; right: 2%"></div>
+<body>
+    <script>
+        const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
+            manifestUrl: 'hhttps://t.me/PresaleCoin_bot/Presale/tonconnect-manifest.json',
+            buttonRootId: 'ton-connect'
+        });
+    </script>
+    <script>
+        async function connectToWallet() {
+            const connectedWallet = await tonConnectUI.connectWallet();
+            // Do something with connectedWallet if needed
+            console.log(connectedWallet);
+        }
+    
+        // Call the function
+        connectToWallet().catch(error => {
+            console.error("Error connecting to wallet:", error);
+        });
+        tonConnectUI.uiOptions = {
+      twaReturnUrl: 'https://t.me/PresaleCoin_bot/Presale'
+  };
+    </script>
+</body>  
+
   
 <body>
 <div>
