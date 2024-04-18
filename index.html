@@ -10,7 +10,7 @@
       font-family: Arial, sans-serif;
     }
 
-    div {
+    nav {
       margin: 10px;
       padding: 10px;
       border: 4px solid black;
@@ -49,21 +49,43 @@
   <h1>Presale Coin</h1>
   <hr>
 
+  <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+<div id="ton-connect" style="position: absolute; top: 2%; right: 2%"></div>
+<script>
+    const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
+        manifestUrl: 'https://raw.githubusercontent.com/purplemeth/presalebot/main/tonconnect-manifest.json',
+        buttonRootId: 'ton-connect'
+    });
+</script>
+<script>
+    async function connectToWallet() {
+        const connectedWallet = await tonConnectUI.connectWallet();
+        // Do something with connectedWallet if needed
+        console.log(connectedWallet);
+    }
+
+    // Call the function
+    connectToWallet().catch(error => {
+        console.error("Error connecting to wallet:", error);
+    });
+    await tonConnectUI.disconnect();
+</script>
+
   
 <body>
-<div>
+<nav>
 <strong>No Active  <img src="https://i.postimg.cc/657qFJPZ/pngtree-circle-clipart-gray-circle-png-image-2381994.png" width="12" height="12"></strong><br>
   <center><img src="https://i.postimg.cc/QCZbCcwt/photo-2024-02-24-19-29-37.png" width="75" height="75" alt="Logo"></center>
   <strong><p>MATVEY JETTON</p></strong>
   <strong><p>1 MATVEY = 0.003 TON</p></strong>
   <strong><p>Soft cap 100 TON</p></strong>
-  <div>
+  <nav>
     <strong><p>Liquidity Pool: 100%</p></strong>
     <strong><p>Offered: 10,000 MATVEY</p></strong>
-  </div>
+  </nav>
   <strong><p>Progress (50%) 50/100 TON</p></strong>
   <center><progress max="100" value="50">Загружено на <span id="value">50%</span></progress></center>
     <center><button type="submit" class="floating-button"><strong>Buy Token</strong></button></center>
-</div>
+</nav>
 </body>
 </html>
