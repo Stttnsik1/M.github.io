@@ -11,6 +11,10 @@
         margin: 0; /* Убираем отступы по умолчанию у body */
     }
 
+    section {
+        margin-top: 7px; /* Отступ сверху */
+    }
+
     nav {
         margin: 20px auto; /* Добавляем отступы сверху и снизу, а также центрируем по горизонтали */
         padding: 10px;
@@ -50,7 +54,9 @@
 </style>
 
 </head>
+<section>
   <img src="https://i.postimg.cc/Y9yJCR7H/41cc457f-f23b-456b-b041-0959ff2c8c94.png" width="75" height="75"><strong>PresaleCoin</strong>
+</section>
   <hr>
 
   <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
