@@ -11,7 +11,6 @@
     }
 
     nav {
-      margin-top: 10px;
       margin: 10px;
       padding: 10px;
       border: 4px solid black;
