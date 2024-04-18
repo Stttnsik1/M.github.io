@@ -5,52 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style type="text/css">
     body {
-      background-color: #1a1a1a;
-      color: #ffffff;
-      font-family: Arial, sans-serif;
+        background-color: #1a1a1a;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        margin: 0; /* Убираем отступы по умолчанию у body */
     }
 
     nav {
-      margin: 10px;
-      padding: 10px;
-      border: 4px solid black;
-      border-radius: 10px;
-      background-color: #1a1a1a;
-      color: #ffffff;
+        margin: 20px auto; /* Добавляем отступы сверху и снизу, а также центрируем по горизонтали */
+        padding: 10px;
+        border: 4px solid black;
+        border-radius: 10px;
+        background-color: #1a1a1a;
+        color: #ffffff;
+        max-width: 80%; /* Устанавливаем максимальную ширину */
+        margin-top: 65px; /* Отступ сверху */
     }
 
     p {
-      text-align: center;
+        text-align: center;
     }
 
     button.floating-button {
-      display: block;
-      margin: 10px auto;
-      border: none;
-      border-radius: 5px;
-      padding: 10px 20px;
-      background-color: #0000CD;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
+        display: block;
+        margin: 10px auto;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        background-color: #0000CD;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
     }
 
     h1 {
-      font-size: 1.8em;
-      text-align: center;
+        font-size: 1.8em;
+        text-align: center;
     }
 
     img {
-      max-width: 100%;
-      height: auto;
+        max-width: 100%;
+        height: auto;
     }
-  </style>
+</style>
+
 </head>
   <h1>Presale Coin</h1>
   <hr>
 
   <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
-<div id="ton-connect" style="position: absolute; top: 20%; right: 20%"></div>
+<div id="ton-connect" style="position: absolute; top: 12%; right: 12%"></div>
 <script>
     const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
         manifestUrl: 'https://raw.githubusercontent.com/purplemeth/presalebot/main/tonconnect-manifest.json',
