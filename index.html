@@ -54,7 +54,7 @@
   <hr>
 
   <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
-<div id="ton-connect" style="position: absolute; top: 12%; right: 12%"></div>
+<div id="ton-connect" style="position: absolute; top: 18%; right: 18%"></div>
 <script>
     const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
         manifestUrl: 'https://raw.githubusercontent.com/purplemeth/presalebot/main/tonconnect-manifest.json',
