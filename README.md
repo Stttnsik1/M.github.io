@@ -19,7 +19,7 @@
         background-color: #1a1a1a;
         color: #ffffff;
         max-width: 80%; /* Устанавливаем максимальную ширину */
-        margin-top: 65px; /* Отступ сверху */
+        margin-top: 5px; /* Отступ сверху */
     }
 
     p {
@@ -50,11 +50,11 @@
 </style>
 
 </head>
-  <h1>Presale Coin</h1>
+  <img src="https://i.postimg.cc/Y9yJCR7H/41cc457f-f23b-456b-b041-0959ff2c8c94.png" width="75" height="75"><strong>PresaleCoin</strong>
   <hr>
 
   <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
-<div id="ton-connect" style="position: absolute; top: 15%; right: 15%"></div>
+<div id="ton-connect" style="position: absolute; top: 3%; right: 3%"></div>
 <script>
     const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
         manifestUrl: 'https://raw.githubusercontent.com/purplemeth/presalebot/main/tonconnect-manifest.json',
@@ -75,7 +75,7 @@
     await tonConnectUI.disconnect();
 </script>
 
-  
+<strong><h2>Presale:</h2></strong>
 <body>
 <nav>
 <strong>No Active  <img src="https://i.postimg.cc/657qFJPZ/pngtree-circle-clipart-gray-circle-png-image-2381994.png" width="12" height="12"></strong><br>
