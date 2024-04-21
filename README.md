@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <!-- ... остальные мета-теги и стили -->
-</head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style type="text/css">
@@ -23,7 +19,7 @@
     nav {
         margin: 20px auto; /* Добавляем отступы сверху и снизу, а также центрируем по горизонтали */
         padding: 10px;
-        border: 3px solid rgb(31, 30, 30);
+        border: 2px solid rgb(44, 44, 44);
         border-radius: 10px;
         background-color: #414040;
         color: #ffffff;
@@ -36,9 +32,7 @@
     }
 
     button.floating-button {
-        display: grid;
-        place-items: center;
-        position: fixed;
+        display: block;
         margin: 10px auto;
         border: none;
         border-radius: 5px;
@@ -58,20 +52,13 @@
         max-width: 100%;
         height: auto;
     }
-    
-    header {
-    background-color:#292828;
-    position: static;
-    }
 </style>
 </head>
 
-<header>
 <section>
   <img src="https://i.postimg.cc/Y9yJCR7H/41cc457f-f23b-456b-b041-0959ff2c8c94.png" width="75" height="75"><strong>PresaleCoin</strong>
 </section>
 <hr>
-
 
   <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
 <div id="ton-connect" style="position: absolute; top: 5%; right: 5%"></div>
@@ -94,7 +81,7 @@
     });
     await tonConnectUI.disconnect();
 </script>
-</header>
+
 
 <strong><h2>Presale:</h2></strong>
 
@@ -110,8 +97,9 @@
     <strong><p>Liquidity Pool: 100%</p></strong>
     <strong><p>Offered: 10,000 MATVEY</p></strong>
   </nav>
+
   <strong><p>Progress (50%) 50/100 TON</p></strong>
-  <center><progress max="100" value="50">Загружено на <span id="value">50%</span></progress></center> 
-<center><button type="submit" class="floating-button">Buy Token</button></center>
+  <center><progress max="100" value="50">Загружено на <span id="value">50%</span></progress></center>
+  <center><button type="submit" class="floating-button"><strong>Buy Token</strong></button></center>
 </nav>
 </html>             
