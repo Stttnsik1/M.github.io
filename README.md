@@ -65,6 +65,7 @@
 <section>
   <img src="https://i.postimg.cc/Y9yJCR7H/41cc457f-f23b-456b-b041-0959ff2c8c94.png" width="75" height="75"><strong>PresaleCoin</strong>
 </section>
+<hr>
 
 
   <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
@@ -106,6 +107,6 @@
   </nav>
   <strong><p>Progress (50%) 50/100 TON</p></strong>
   <center><progress max="100" value="50">Загружено на <span id="value">50%</span></progress></center> 
-  <center><button type="submit" class="floating-button">Buy Token</button></center>
+<center><button type="submit" class="floating-button">Buy Token</button></center>
 </nav>
 </html>             
