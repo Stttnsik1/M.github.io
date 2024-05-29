@@ -26,7 +26,6 @@
         max-width: 80%; /* Устанавливаем максимальную ширину */
         margin-top: 0px; /* Отступ сверху */
     }
-
     p {
         text-align: center;
     }
@@ -52,40 +51,100 @@
         max-width: 100%;
         height: auto;
     }
+    #content {
+  width: 500px; /* Ширина слоя */
+  margin: 0 auto 50px; /* Выравнивание по центру */
+    }
+    #footer {
+  position: fixed; /* Фиксированное положение */
+  right: 0; top: 0; /* Левый нижний угол */
+  padding: 10px; /* Поля вокруг текста */
+  background: #444444; /* Цвет фона */
+  color: #fff; /* Цвет текста */
+  width: 100%; /* Ширина слоя */
+  height: 10%;
+}
+body {
+margin-top: 100px;
+}
+h3 {
+font-family: Arial;
+font-size: 30px;
+position: fixed;
+margin: 12px
+}
+input {
+    margin: 20px auto;
+            padding: 10px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 15px;
+            background-color: #414040;
+            color: #424040;
+            max-width: 80%; 
+            margin-top: 0px;
+}
 </style>
 </head>
 
-<section>
-  <img src="https://i.postimg.cc/Y9yJCR7H/41cc457f-f23b-456b-b041-0959ff2c8c94.png" width="75" height="75"><strong>PresaleCoin</strong>
-</section>
-<hr>
+<div id="footer"><h3>PresaleCoin</h3></div>
+
 
   <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
-<div id="ton-connect" style="position: absolute; top: 5%; right: 5%"></div>
+<div id="ton-connect" style="position: fixed; top: 3%; right: 5%"></div>
+<script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+<div id="ton-connect" style="position: fixed; top: 3%; right: 5%"></div>
 <script>
     const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
-        manifestUrl: 'https://raw.githubusercontent.com/purplemeth/presalebot/main/tonconnect-manifest.json',
+        manifestUrl: 'https://raw.githubusercontent.com/Stttnsik1/tonconnect-manifest.json/main/tonconnect-manifest.json',
         buttonRootId: 'ton-connect'
     });
-</script>
-<script>
-    async function connectToWallet() {
-        const connectedWallet = await tonConnectUI.connectWallet();
-        // Do something with connectedWallet if needed
-        console.log(connectedWallet);
+
+    // This variable will hold the transaction object
+    let transaction = {};
+
+    // Function to create and update the transaction object
+    function updateTransaction(amount) {
+        transaction = {
+            validUntil: Math.round(Date.now() / 1000) + 10,
+            messages: [
+                {
+                    address: "UQBQ3GE8djotFZNWqLWz0cgSAE9j37c82Ll3yLqPKZes1goR",
+                    amount: amount
+                }
+            ]
+        };
     }
 
-    // Call the function
-    connectToWallet().catch(error => {
-        console.error("Error connecting to wallet:", error);
+    // Function to send the transaction
+    async function sendTransaction() {
+        try {
+            await tonConnectUI.sendTransaction(transaction);
+            console.log("Transaction sent successfully!");
+        } catch (e) {
+            console.error(e);
+            console.error("Error sending transaction:", e);
+        }
+    }
+
+    // Event listener for the input field
+    document.getElementById("TON").addEventListener('input', function() {
+        const input = parseFloat(this.value);
+        if (!isNaN(input) && input > 0) {
+            updateTransaction(input); // Update the transaction object
+        } else {
+            console.log("Invalid input.");
+        }
     });
-    await tonConnectUI.disconnect();
+
 </script>
 
 
 <strong><h2>Presale:</h2></strong>
 
-  <nav>
+
+
+<body>
+<nav>
 <strong>Active  <img src="https://i.postimg.cc/Nf7sPYx2/png-transparent-circle-green-circle-color-grass-sphere-thumbnail.png" width="12" height="12"></strong><br>
   <center><img src="https://i.postimg.cc/0ydsPWk3/2616-A84-A-8238-44-E0-B09-B-CB9-EF6843-D81.png" width="75" height="75" alt="Logo"></center>
   <strong><p>XBuyCrypto(XBC)</p></strong>
@@ -99,10 +158,11 @@
 
   <strong><p>Progress (0%) 0/1000 TON</p></strong>
   <center><progress max="100" value="50">Загружено на <span id="value">0%</span></progress></center>
-<form action="https://app.tonkeeper.com/transfer/UQBQ3GE8djotFZNWqLWz0cgSAE9j37c82Ll3yLqPKZes1goR?&text=XBC" target="_blank">
- <button type="submit" class="floating-button"><strong>Buy Token</strong></button>
+  <center><input id="TON"></center>
+  <button type="button" class="floating-button" onclick="sendTransaction()"><strong>Buy Token</button></strong>
   </form>
 </nav>
+</body>
 
 <nav>
 <strong>No Active  <img src="https://i.postimg.cc/657qFJPZ/pngtree-circle-clipart-gray-circle-png-image-2381994.png" width="12" height="12"></strong><br>
@@ -120,4 +180,4 @@
   <center><progress max="100" value="50">Загружено на <span id="value">50%</span></progress></center>
   <center><button type="submit" class="floating-button"><strong>Buy Token</strong></button></center>
 </nav>
-</html>             
+</html> 
