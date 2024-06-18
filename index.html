@@ -89,7 +89,7 @@ input {
 <div id="footer"><h3>PresaleCoin</h3></div>
 
 
-  <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+<script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
 <div id="ton-connect" style="position: fixed; top: 3%; right: 5%"></div>
 <script>
     const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
@@ -116,11 +116,18 @@ input {
     // Function to send the transaction
     async function sendTransaction() {
         try {
-            await tonConnectUI.sendTransaction(transaction);
-            console.log("Transaction sent successfully!");
+            const result = await tonConnectUI.sendTransaction(transaction);
+            // Обработка результата транзакции
+            if (result.success) {
+                console.log("Transaction sent successfully!");
+                alert("Transaction sent successfully!"); 
+            } else {
+                console.error("Transaction failed:", result.error);
+                alert("Transaction failed. Please try again later.");
+            }
         } catch (e) {
-            console.error(e);
             console.error("Error sending transaction:", e);
+            alert("An error occurred during transaction. Please try again later.");
         }
     }
 
@@ -129,12 +136,15 @@ input {
         const input = parseFloat(this.value);
         if (!isNaN(input) && input > 0) {
             updateTransaction(input); // Update the transaction object
+            // Вызов sendTransaction() после обновления transaction
+            sendTransaction();
         } else {
             console.log("Invalid input.");
         }
     });
-await tonConnectUI.disconnect();
-</script>
+
+</script> 
+
 
 
 <strong><h2>Presale:</h2></strong>
