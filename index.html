@@ -133,7 +133,7 @@ input {
             console.log("Invalid input.");
         }
     });
-
+await tonConnectUI.disconnect();
 </script>
 
 
