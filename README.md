@@ -76,10 +76,10 @@ margin: 12px
 input {
     margin: 20px auto;
             padding: 10px;
-            border: 1px solid rgb(255, 255, 255);
+            border: 1px solid rgb(92, 92, 92);
             border-radius: 15px;
             background-color: #414040;
-            color: #424040;
+            color: #ffffff;
             max-width: 80%; 
             margin-top: 0px;
 }
@@ -90,8 +90,6 @@ input {
 
 
   <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
-<div id="ton-connect" style="position: fixed; top: 3%; right: 5%"></div>
-<script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
 <div id="ton-connect" style="position: fixed; top: 3%; right: 5%"></div>
 <script>
     const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
